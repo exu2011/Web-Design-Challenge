@@ -1,127 +1,138 @@
 /* Body */
-body{
-  background-color: #EDEDED; 
+body {
+  background-color: #FFFFFF; 
 }
-/* Navbar */
-.navbar{
+/* Navbar classes*/
+.navbar {
   max-height: 57px; 
 }
-.navigation .navbar-brand{
+.navigation .navbar-brand {
   color: white; 
   margin-left: 30px; 
   padding: inherit; 
   font-weight: bold; 
-  background-color: #0BADA6;
+  background-color: #13b1a9;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.navbar{
+.navbar {
   background-color: white; 
   font-size: 15px; 
 }
-.active, .dropdown-menu .dropdown-item:active a:hover{
-  background-color:#E7E7E7!important; 
+.nav-link:hover {
+  background-color:#FFFFFF !important;
+ }
+
+.navbar-brand:hover {
+color: rgb(175, 175, 175) !important;
 }
-.dropdown-item{
+
+a:hover, .active, .dropdown-menu .dropdown-item:active {
+  background-color:#FFFFFF!important; 
+}
+
+/* dropdown class */
+.dropdown-item {
   color: #6D8092 !important; 
 }
 .dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
-  background-color:#E7E7E7 !important; 
+  background-color:#FFFFFF !important; 
 }
-a{
+
+a {
   color: #6D8092;
   font-size: 15px; 
 }
-.nav-link:hover{
-  background-color:#E7E7E7 !important;
- }
 
-.navbar-brand:hover{
-color: rgb(175, 175, 175) !important;
-}
-/* Images */
-img{
+/* Image class */
+img {
   width:100% !important;
   height:100% !important;
 }
-.active, .panel:hover{
-  border-color:#0BADA6;
+
+.active, .panel:hover {
+  border-color:#13b1a9;
   border-style: solid; 
-  
 }
+
 /* "!important" to add more importance, and override all previous styling rules */
-.visualization{
+.visualization {
   width:50% !important;
   height:50% !important;
 }
 
 /* Title Class  */
-.title{
-  color: #0fb9b1;  
+.title {
+  color: #13b1a9;  
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bolder; 
   padding-top: 25px; 
 }
-/* Paragraph */
-p{
-color: #6D8092;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 17px; 
+
+/* Paragraph element */
+p {
+  color: #6D8092;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px; 
 }
-/* Box Class */
+
+/* Table class */
+.table {
+  font-size: 15px; 
+  border-top-color: white !important; 
+}
+ 
+/* Box class */
 .box {
   margin-top: 60px; 
   margin-bottom: 60px; 
   padding: 15px 15px 15px; 
   color:black;
   background-color: white; 
-
 }
-/* Table */
-.table{
+
+/* Footer element */
+footer {
+  background-color: #555454; 
+  border-top-style: solid; 
+  border-top-width: 5px; 
+  border-top-color: #13b1a9;
+  color: white; 
+  min-height: 60px; 
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 15px; 
-  border-top-color: white !important; 
+  text-align: center; 
+  position: fixed;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  padding-top: 20px; 
 }
-/* Footer */
-footer{
-background-color: #666666; 
-border-top-style: solid; 
-border-top-width: 5px; 
-border-top-color: #0BADA6;
-color: white; 
-min-height: 55px; 
-font-family: Arial, Helvetica, sans-serif;
-font-size: 15px; 
-text-align: center; 
-position: fixed;
-left: 0;
-bottom: 0;
-width: 100%;
-padding-top: 15px; 
-}
+
 /* Media Queries */
-@media(max-width: 992px){
-.navbar-expand-lg{
-background-color: #0BADA6 !important;
-}
-.navbar{
-  max-height: none; 
-  padding: inherit;
-}
-.navbar div{
-  margin: inherit; 
-  background-color: white;  
-}
-.navbar-brand{
-  padding: 10px !important; 
-}
+/* Using media queries are a popular technique for delivering a tailored style sheet (responsive web design) to desktops, laptops, tablets, and mobile phones. */
+@media(max-width: 960px) {
+  .navbar {
+    max-height: none; 
+    padding: inherit;
+  }
+  .navbar-brand {
+    padding: 10px !important; 
+  }
+  .navbar div {
+    margin: inherit; 
+    background-color: white;  
+  }
+  .navbar-expand-lg {
+    background-color: #13b1a9 !important;
+  }
 
-button{
-  margin-right: 30px; 
-}
-button:focus {
+  /* button element */
+  button {
+    margin-right: 30px; 
+  }
 
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focusring-color;
-  
+  button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focusring-color;
   }
 }
